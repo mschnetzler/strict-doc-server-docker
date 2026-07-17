@@ -29,5 +29,5 @@ jobs:
           push: true
           build-args: STRICTDOC_VERSION=${{ steps.version.outputs.version }}
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}:${{ steps.version.outputs.version }}
-            ${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/mschnetzler/strictdoc-server:${{ steps.version.outputs.version }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/mschnetzler/strictdoc-server:latest
